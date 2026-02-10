@@ -4,7 +4,7 @@ if(a>b){
     console.log("a is greater than ");
 }else{
     console.log("b is greater than ");
-}
+}dghfgttjfhj
 
 
 
