@@ -21,3 +21,5 @@ console.log(a !== b) //strict not equal to
 
 //logocal operators
 console.log(a > b && a < 20)         //logical and
+console.log(a>b || a>20)
+console.log(!a>b)
