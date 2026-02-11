@@ -42,5 +42,6 @@
 //  console.log(a)
 
 
-firstName = "John"
-first_name = "John"
+// firstName = "John"
+// first_name = "John"
+// FirstName = "John"
