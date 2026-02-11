@@ -1,5 +1,5 @@
 // let a = 10             //reassigning the value is possible
-// var a = 10             //
+// var a = 10             
 //const a = 10           //we cannot change the value 
 
 
@@ -28,15 +28,19 @@
 
 
 
-var a = 10
-function f1()
-{
-    var a = 20
-    if(3>1){
-        var a=30
-        console.log(a)
-    }
-    console.log(a)
-}
-f1()
- console.log(a)
+// var a = 10
+// function f1()
+// {
+//     var a = 20
+//     if(3>1){
+//         var a=30
+//         console.log(a)
+//     }
+//     console.log(a)
+// }
+// f1()
+//  console.log(a)
+
+
+firstName = "John"
+first_name = "John"
