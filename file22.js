@@ -89,6 +89,8 @@ products.forEach((product) => {
   // console.log(product.id, product.name, product.desc, product.price);
     console.log(`${product.id}-${product.name}-${product.desc}-${product.price}`);
 });
+
+
 console.log("------------------");
 addToCart(1);
 addToCart(3);
