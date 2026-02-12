@@ -42,17 +42,55 @@ const products = [
     category: "Laptop",
   },
 ];
-const cart = []
-function addToCart(id){
-  const product = products.find((item) => item.id === id);
-
-  if (product) {
-    cart.push(product);
-  } else {
-    console.log("Product not found");
-  }
+const cart = [];
+function addToCart(productId) {
+  const product = products.find((product) => product.id === productId);
+  cart.push({ ...product, quantity: 1 });
 }
-    addToCart(1)
-    addToCart(3)
-    addToCart(5)
-    console.log(cart)
+function increment(productId) {
+  const item = cart.find((product) => product.id === productId);
+  item.quantity++;
+}
+function decrement(productId) {
+  const item = cart.find((product) => product.id === productId);
+  item.quantity--;
+}
+const userEmail = "john@gmail.com";
+function calculateTotal() {
+  let total = 0;
+  for(let item of cart) {
+    productTotal = item.price * item.quantity;
+    total += item.price * item.quantity;
+  }
+  return total;
+}
+function placeOrder(){
+  if(cart.length === 0) {
+    console.log("Cart is empty");
+    return;
+  }
+  const total = calculateTotal();
+
+  const order = {
+    email: userEmail,
+    items: cart, 
+    orderValue: total,
+    totalValue: productTotal
+  };
+  console.log("Order placed successfully");
+  console.log(order);
+  console.log("product total", productTotal)
+  console.log("Total order value", total);
+}
+addToCart(1);
+addToCart(3);
+addToCart(5);
+// console.log(cart);
+increment(1);
+increment(5);
+// console.log(cart);
+decrement(1);
+// console.log(cart);
+decrement(1);
+// console.log(cart);
+placeOrder();
