@@ -82,6 +82,14 @@ function placeOrder(){
   console.log("product total", productTotal)
   console.log("Total order value", total);
 }
+
+//console.log(products);
+
+products.forEach((product) => {
+  // console.log(product.id, product.name, product.desc, product.price);
+    console.log(`${product.id}-${product.name}-${product.desc}-${product.price}`);
+});
+console.log("------------------");
 addToCart(1);
 addToCart(3);
 addToCart(5);
