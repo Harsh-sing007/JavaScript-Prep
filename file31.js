@@ -1,4 +1,4 @@
-import {products} from "./data.js";
+import products from "./data.js";
 import {footer} from "./footer.js";
 import {names} from "./header.js";
 console.log(names);
