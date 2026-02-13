@@ -1,4 +1,5 @@
 numbers = [5, 3, 6, 1]
+
 numbers.forEach(() => {})
 // numbers.forEach((num) => {
 //   console.log(num);
@@ -34,9 +35,24 @@ numbers.find(() => {})
 // const firstGreaterThan4 = numbers.find((num) => {
 //   return num > 4;
 // });
-
 // console.log(firstGreaterThan4);
-// // 5
+// 5
+
+numbers.some(()=>{})
+// Checks whether at least one element in an array satisfies a condition.
+// const result = numbers.some((num) => {
+//   return num > 20;
+// });
+// console.log(result);  false
+
+numbers.every(()=>{})
+//Checks whether all elements in an array satisfy a condition.
+// const result = numbers.every((num) => {
+//   return num > 20;
+// });
+// console.log(result);  false
+
+
 
 //-----------------------------------------------------------------------------------------------------------------------------------
 // Need to loop only → forEach
@@ -48,3 +64,5 @@ numbers.find(() => {})
 // Need to get one result → reduce
 
 // Need to find one item → find
+
+//--------------------------------------------------------------------------------------------------------------------------------
