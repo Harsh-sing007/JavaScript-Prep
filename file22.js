@@ -56,14 +56,18 @@ function decrement(productId) {
   item.quantity--;
 }
 const userEmail = "john@gmail.com";
+
 function calculateTotal() {
-  let total = 0;
-  for(let item of cart) {
-    productTotal = item.price * item.quantity;
-    total += item.price * item.quantity;
-  }
-  return total;
+let total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
+return total;
 }
+//   let total = 0;
+//   for(let item of cart) {
+//     productTotal = item.price * item.quantity;
+//     total += item.price * item.quantity;
+//   }
+//   return total;
+//}
 function placeOrder(){
   if(cart.length === 0) {
     console.log("Cart is empty");
