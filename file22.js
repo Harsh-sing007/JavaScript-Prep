@@ -1,3 +1,4 @@
+
 const products = [
   {
     id: 1,
@@ -58,52 +59,51 @@ function decrement(productId) {
 const userEmail = "john@gmail.com";
 
 function calculateTotal() {
-let total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
-return total;
+  let total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  return total;
 }
-//   let total = 0;
-//   for(let item of cart) {
-//     productTotal = item.price * item.quantity;
-//     total += item.price * item.quantity;
-//   }
-//   return total;
-//}
-function placeOrder(){
-  if(cart.length === 0) {
+function placeOrder() {
+  if (cart.length === 0) {
     console.log("Cart is empty");
     return;
   }
+
   const total = calculateTotal();
 
   const order = {
     email: userEmail,
-    items: cart, 
+    items: cart,
     orderValue: total,
-    totalValue: productTotal
+    // totalValue: productTotal,
   };
-  console.log("Order placed successfully");
-  console.log(order);
-  console.log("product total", productTotal)
+
+  console.log(`Order placed successfully by ${order.email}`);
+
+  order.items.forEach((item) => {
+    console.log(
+      `${item.id}-${item.name}-${item.desc}-${item.quantity}-${item.price}-${item.price * item.quantity}`,
+    );
+  });
+
+  // console.log("product total", productTotal);
+
   console.log("Total order value", total);
 }
 
-//console.log(products);
-
+//console.log(products)
+console.log("***Flipkart***");
 products.forEach((product) => {
   // console.log(product.id, product.name, product.desc, product.price);
-    console.log(`${product.id}-${product.name}-${product.desc}-${product.price}`);
+  console.log(`${product.id}-${product.name}-${product.desc}-${product.price}`);
 });
 
-
-console.log("------------------");
+console.log("--------------------------");
 addToCart(1);
 addToCart(3);
 addToCart(5);
 // console.log(cart);
 increment(1);
 increment(5);
-// console.log(cart);
-decrement(1);
 // console.log(cart);
 decrement(1);
 // console.log(cart);
