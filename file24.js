@@ -43,3 +43,7 @@ const products = [
     category: "Laptop",
   },
 ];
+
+
+//for tabular format
+//console.table(products);
