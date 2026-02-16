@@ -1,4 +1,3 @@
-import { getRandomValues } from "node:crypto"
 
 const numbers = [10,20,30,40,50]
 // let n1=numbers[0]
