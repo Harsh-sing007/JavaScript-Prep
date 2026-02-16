@@ -10,7 +10,8 @@ function makepayment() {
 function sendConfirmation() {
   console.log("Order has been placed Successfully");
 }
-
+//call back hello
+//makePayment(sendConfirmation);
 makepayment()
   .then(() => sendConfirmation())
   .catch((err) => console.log(err));

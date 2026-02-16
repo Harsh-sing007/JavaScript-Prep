@@ -12,11 +12,6 @@
 // let  name = "John"
 
 
-// let  name
-// console.log(name)
-// name = "John"
-
-
 //Function are fully hoisted
 // greet()
 // function greet()

@@ -28,7 +28,7 @@
 function makepayment(){
 setTimeout(()=>{console.log("Payment has been processed")},1000)
 }
-//we have delayed f1 using setTimeout
+
 function sendConfirmation()
 {
     console.log("Order has been placed Successfully")
