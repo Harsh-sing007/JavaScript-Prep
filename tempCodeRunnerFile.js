@@ -1,8 +1,2 @@
-d.setFullYear(2025)
-// d.setMonth(11)
-// d.setDate(21)
-// d.setHours(10)
-// d.setMinutes(10)
-// d.setSeconds(10)
-// d.setMilliseconds(1)
-// d.getTime()
+console.log(name)
+// var name = "John"

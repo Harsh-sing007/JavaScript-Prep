@@ -1,6 +1,6 @@
 //Hoisting with var 
-console.log(name)
-var name = "John"
+// console.log(name)
+// var name = "John"
 
 // var name
 // console.log(name)
@@ -25,7 +25,7 @@ var name = "John"
 // }
 
 
-var greet = () =>{
+const greet = () =>{
     console.log("Hello World")
 }
 
