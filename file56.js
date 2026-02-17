@@ -7,7 +7,7 @@
 
 const student = {
     name:"John",
-    age:23
+    age:23,
 };
 for(let s in student)
 {

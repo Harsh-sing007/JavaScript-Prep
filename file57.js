@@ -19,5 +19,5 @@ for(let s of Object.keys(student))
 //returns keys
 //CONVERTS TO ARRAY 
     {
-        console.log(s)
+        console.log(student[s])
     }
