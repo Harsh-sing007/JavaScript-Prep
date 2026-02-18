@@ -1,7 +1,30 @@
-const employee = {
-  name: "Amit",
-  greet() {
-    console.log(this.name);
-  },
-};
-employee.greet();
+//  x =10
+// console.log(x) //no error
+
+// "use strict"
+//  x =10  //error
+// console.log(x)
+
+// "use strict"
+// let x = 10 // no error
+// console.log(x)
+
+// function add(a,a)
+// {
+//   console.log(a+a)
+// }
+// add(4,5)
+
+
+//"use strict"            //properly write the code 
+// function add(a,b)
+// {
+//   console.log(a+b)
+// }
+// add(4,5)
+
+
+"use strict"
+let x=0o10   //indicates octal number, cannot use 010
+console.log(x)
+
